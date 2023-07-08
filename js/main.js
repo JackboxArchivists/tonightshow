@@ -9051,7 +9051,7 @@ var io = "undefined" == typeof module ? {} : module.exports;
             e.responseJSON && e.responseJSON.error ? t = e.responseJSON.error : t = e;
             var n = this;
             setTimeout(function () {
-                n.model.client.joinRoom("MQLB", "User", {})
+                n.model.client.joinRoom("INSERTCODEHERE", "User", {})
             }, 5e3), this.model.useStorage && (this.model.storage.remove("username"), this.model.storage.remove("roomid"))
         }, h.prototype.onRoomJoined = function (e) {
             this.model.set("connected", !0), this.model.useStorage && (this.model.storage.set("username", this.model.get("username")), this.model.storage.set("roomid", e)), this.model.delegate && this.model.delegate.onRoomJoined({
@@ -10274,7 +10274,7 @@ var io = "undefined" == typeof module ? {} : module.exports;
                 }), !1;
                 i.trackEvent("SignIn", "joinRoom");
                 var e = {};
-                return this.model.connect("MQLB", "AUDIENCE", e), !1
+                return this.model.connect("INSERTCODEHERE", "AUDIENCE", e), !1
             },
             goToHelp: function () {
                 window.open("https://jackboxgames.zendesk.com/entries/57303554-Jackbox-tv-Help-FAQ", "_blank")
