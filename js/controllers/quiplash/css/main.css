@@ -1,0 +1,157 @@
+p, h1, h2, h3, h4, h5, h6, td, th, .quiplash-page span {
+  font-family: 'Rokkitt';
+  text-align: center;
+  font-weight:500;
+  font-size:2em;
+  font-kerning: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ 
+#state-done-answering{
+    text-align: center;
+}
+#vote-text{
+    font-size: 23px;
+}
+.container{
+    padding-bottom: 15px;
+    text-align: center;
+}  
+.game {
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    text-transform:uppercase;
+}
+.game button {
+    text-transform:uppercase;
+}
+.quiplash-page {
+  overflow-y:auto;
+}
+#player{
+    color:#000000;
+}
+#player h1{
+    font-weight:bold;
+    font-size:280%;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+#quiplash-answer-field{
+    margin-left: 20px;   
+    margin-right: 20px;   
+}
+.logo-image {
+    background:#4c4267;
+    width:100%;
+    height:100%;
+}
+.logo-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.round-image-container {
+    background:#000000;
+    width:100%;
+    height:100%;
+}
+.round-image-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+#quiplash-lobby-text{
+    color:white;
+    text-transform: none;
+}
+.button-container button {
+    margin: 5px;
+}
+#quiplash-answer-input{
+    color: #000000;
+    font-family: 'Rokkitt';
+    font-weight:bold;
+    font-size:23px;
+    line-height:normal;
+    border-radius: 0px;
+}
+#state-answer-question{
+    color:white;
+}
+#state-done-answering span{
+    color:white;
+}
+#state-vote{
+    color:white;
+}
+.state-answer-question-audience-text{
+    text-transform: none;
+}
+.button-quiplash {
+    color: white;
+    background: rgb(0, 0, 0);
+    margin: 5px;
+    font-family: 'Rokkitt';
+    font-size:2em;
+    font-weight:500;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display:block;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.button-quiplash:hover {
+   color: white;
+   background: rgb(0, 0, 0);
+   border-top-color: #ffffff;
+}
+.button-quiplash:active {
+   background: #ffffff;
+   color: #000000;
+}
+#quiplash-submit-answer{
+    font-size: 23px;
+    text-transform: none;
+}
+#quiplash-submit-alert{
+    display:block;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+#question-text{
+    text-transform: none;
+    font-size: 30px;
+    line-height: 30px;
+}
+#quiplash-vote button{
+    font-size: 27px;
+}
+.button-quiplash-loading {
+  background: #FFFFFF url('../../../../images/loading.gif') no-repeat center;
+  background-size: contain;
+  color: hsla(0, 0%, 0%, 0);
+  width:32px;
+  height:32px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.quiplash-preload {
+  content: url ( '../../../../images/loading.gif' );
+  display:none;
+}

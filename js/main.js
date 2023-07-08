@@ -91,7 +91,7 @@
 
 /*! iScroll v5.1.3 ~ (c) 2008-2014 Matteo Spinelli ~ http://cubiq.org/license */
 function BlobCastClient(e) {
-    e || (e = {}), this.myUserId = this.myUuid = e.userId, this.server = e.hasOwnProperty("server") ? e.server : "https://blobcast-sandbox.jackboxgames.com", this.appId = e.hasOwnProperty("appId") ? e.appId : undefined, this.delegate = null, this.currentRoomId = null, this.isConnected = !1, this.retries = 0, this.maxRetries = 7, this.joinAs = "player"
+    e || (e = {}), this.myUserId = this.myUuid = e.userId, this.server = e.hasOwnProperty("server") ? e.server : "https://blobcast.jackboxgames.com", this.appId = e.hasOwnProperty("appId") ? e.appId : undefined, this.delegate = null, this.currentRoomId = null, this.isConnected = !1, this.retries = 0, this.maxRetries = 7, this.joinAs = "player"
 }(function (e, t) {
     typeof module == "object" && typeof module.exports == "object" ? module.exports = e.document ? t(e, !0) : function (e) {
         if (!e.document) throw new Error("jQuery requires a window with a document");
@@ -6801,7 +6801,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
         }
     }(this)), define("settings", [], function () {
         return {
-            blobcastUrl: "https://blobcast-sandbox.jackboxgames.com",
+            blobcastUrl: "https://blobcast.jackboxgames.com",
             uaTrackingId: "UA-23005426-36",
             uaSampleRate: 50,
             adRollAdvId: "JX4MF2X45JAIXDY2WV5UCS",
@@ -8976,7 +8976,7 @@ var io = "undefined" == typeof module ? {} : module.exports;
                 initialize: function () {
                     var e = n.getParameterByName("s"),
                         t = e || this.server;
-                    t === "live" ? t = "https://blobcast-sandbox.jackboxgames.com" : t === "local" ? t = "https://localhost" : t.indexOf(".") === -1 ? t = "https://blobcast-" + t + ".jackboxgames.com" : t.indexOf("https://") === -1 && (t = "https://" + t), this.storage = new c("blobcast"), this.useStorage = n.getParameterByName("nc") === "1" ? !1 : f(this.storage);
+                    t === "live" ? t = "https://blobcast.jackboxgames.com" : t === "local" ? t = "https://localhost" : t.indexOf(".") === -1 ? t = "https://blobcast-" + t + ".jackboxgames.com" : t.indexOf("https://") === -1 && (t = "https://" + t), this.storage = new c("blobcast"), this.useStorage = n.getParameterByName("nc") === "1" ? !1 : f(this.storage);
                     if (this.useStorage) {
                         var r = this.storage.get("uuid");
                         r ? this.id = r : (this.id = i(), this.storage.set("uuid", this.id))
@@ -9051,7 +9051,7 @@ var io = "undefined" == typeof module ? {} : module.exports;
             e.responseJSON && e.responseJSON.error ? t = e.responseJSON.error : t = e;
             var n = this;
             setTimeout(function () {
-                n.model.client.joinRoom("TONIGHTSHOW", "User", {})
+                n.model.client.joinRoom("MQLB", "User", {})
             }, 5e3), this.model.useStorage && (this.model.storage.remove("username"), this.model.storage.remove("roomid"))
         }, h.prototype.onRoomJoined = function (e) {
             this.model.set("connected", !0), this.model.useStorage && (this.model.storage.set("username", this.model.get("username")), this.model.storage.set("roomid", e)), this.model.delegate && this.model.delegate.onRoomJoined({
@@ -10274,7 +10274,7 @@ var io = "undefined" == typeof module ? {} : module.exports;
                 }), !1;
                 i.trackEvent("SignIn", "joinRoom");
                 var e = {};
-                return this.model.connect("TONIGHTSHOW", "AUDIENCE", e), !1
+                return this.model.connect("MQLB", "AUDIENCE", e), !1
             },
             goToHelp: function () {
                 window.open("https://jackboxgames.zendesk.com/entries/57303554-Jackbox-tv-Help-FAQ", "_blank")
